@@ -1,0 +1,161 @@
+body{
+    margin: auto;
+    padding: 0;
+    background-color: #006cc5;
+    font-family: 'PT Sans Caption', sans-serif;
+}
+
+/* LOGIN CONTAINER */
+.mainContainer{
+    width: 35vw;
+    height: 80vh;
+    display: block;
+    margin: auto;
+}
+
+.loginCard{
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+    height: 100%;
+    display: flex;
+    flex-direction: column; align-items: center; flex-wrap: nowrap; justify-content: center;
+    border-radius: 20px;
+    margin-top:5vh;
+}
+
+.loginAvatar{
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 30%;
+    color: white;
+}
+
+.helpLoginLink {
+    margin-top: 20px;
+}
+
+a:link{
+    color: white;
+    text-decoration: none;
+    font-size: small;
+}
+
+
+/* INPUTS */
+.inputText{
+    border-radius: 5px; border: none;
+    margin-bottom: 10px;
+    height: 30px; width: 45%;
+}
+input:focus{
+    border: none;
+    outline: none;
+}
+
+input[type=button]{
+    width: 25%; height: 30px;
+    border-radius: 15px;
+    color: #006cc5;
+    font-size: larger;
+}
+#loginButton{
+    margin-top: 20px;
+}
+
+
+
+
+/* MEDIA QUERY */
+
+/* 1024PX */
+
+@media only screen and (max-width: 1024px){
+    a:link{
+        font-size: 10px;
+        white-space: nowrap;
+        display: block;
+     }
+ 
+     body{
+         font-size: 10px;
+         white-space: nowrap;
+         display: block;
+     }
+ 
+     .inputText{
+         max-width: 250px;
+     }
+ 
+     .loginCard{
+         flex-wrap: wrap;
+         margin: 0;
+         box-shadow: none;
+     }
+}
+
+/* 769PX */
+
+@media only screen and (max-width: 769px){
+    a:link{
+        font-size: 10px;
+        white-space: nowrap;
+        display: block;
+     }
+ 
+     body{
+         font-size: 10px;
+         white-space: nowrap;
+         display: block;
+     }
+ 
+     .mainContainer{
+         width: 100%;
+         height: 100vh;
+         display: block;
+         margin: auto;
+     }
+ 
+     .inputText{
+         max-width: 200px;
+     }
+ 
+     .loginCard{
+         flex-wrap: wrap;
+         margin: 0;
+         box-shadow: none;
+     }
+}
+
+/* 320PX */
+
+@media only screen and (max-width: 320px) {
+    a:link{
+       font-size: 10px;
+       white-space: nowrap;
+       display: block;
+    }
+
+    body{
+        font-size: 10px;
+        white-space: nowrap;
+        display: block;
+    }
+
+    .mainContainer{
+        width: 100%;
+        height: 100vh;
+        display: block;
+        margin: auto;
+    }
+
+    .inputText{
+        min-width: 150px;
+    }
+
+    .loginCard{
+        flex-wrap: wrap;
+        margin: 0;
+        box-shadow: none;
+    }
+  }
